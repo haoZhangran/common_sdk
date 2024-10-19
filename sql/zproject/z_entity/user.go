@@ -1,4 +1,4 @@
-package model
+package z_entity
 
 type User struct {
 	Id          int    `gorm:"id" json:"id"`

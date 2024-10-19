@@ -18,6 +18,7 @@ func main() {
 		Dsn(dsn).TagKey("gorm").
 		EnableJsonTag(true).
 		Table("user").
+		PackageName("z_entity").
 		Run()
 	if err != nil {
 		fmt.Println(err)
