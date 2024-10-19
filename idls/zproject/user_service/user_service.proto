@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package user_service;
+
+option go_package = "../../../protoc_gen_code/zproject/user_service";
+
+message GetUserInfoByIDRequest {
+  string ID = 1;
+}
+
+message GetUserInfoByIDResponse {
+  string ID = 1;
+  string Name = 2;
+  string Email = 3;
+}
+
+service UserService {
+  rpc GetUserInfoByID (GetUserInfoByIDRequest) returns (GetUserInfoByIDResponse) {}
+}
