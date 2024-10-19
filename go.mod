@@ -1,4 +1,4 @@
-module zproject/common_sdk
+module haoZhangran/common_sdk
 
 go 1.21
 
