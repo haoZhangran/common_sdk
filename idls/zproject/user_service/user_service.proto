@@ -2,6 +2,8 @@ syntax = "proto3";
 
 package user_service;
 
+import "common_sdk/idls/zproject/common/common.proto";
+
 option go_package = "../../../protoc_gen_code/zproject/user_service";
 
 message GetUserInfoByIDRequest {

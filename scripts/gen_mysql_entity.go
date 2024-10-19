@@ -10,7 +10,7 @@ import (
 )
 
 var dsn = "root:12369@tcp(127.0.0.1:3306)/zproject?parseTime=True&loc=Local"
-var savePath = "sql/zproject/z_entity/user.go"
+var savePath = "sql/zproject/z_entity/user.go" // 需要先建文件再写入，否则会写入失败
 
 func main() {
 	err := converter.NewTable2Struct().
