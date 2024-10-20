@@ -10,3 +10,7 @@ type User struct {
 	CreatedTime string `gorm:"created_time" json:"created_time"`
 	UptadeTime  string `gorm:"uptade_time" json:"uptade_time"`
 }
+
+func (u User) TableName() string {
+	return "user"
+}
